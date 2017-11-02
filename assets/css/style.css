@@ -1,0 +1,36 @@
+body {
+    background-image: url("../images/justiceleague.jpeg");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: left top;
+    position: relative;
+    color: rgb(255, 255, 255) !important;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.jumbotron {
+    text-align: center;
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+    background: rgb(63, 63, 63) !important;
+}
+
+#start {
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    background: rgb(63, 63, 63) !important;
+}
+
+#clock {
+    margin-top: 17px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.radio-inline {
+    font-size: 20px;
+}
