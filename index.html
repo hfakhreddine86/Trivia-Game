@@ -26,92 +26,103 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <button class="btn" onclick="myFunction()" id="start">Start Game</button>
+                    <button id="start">Start Game</button>
+                    <button id="reset">Reset Game</button>
                 </div>
                 <div class="col-md-6">
-                    <div id="clock">Time Remaining: </div>
+                    <div id="timer"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12">
-                    <h2>What is Superman's earth name?</h2>
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="results">
+                        <div id="correct-answer"></div>
+                        <div id="incorrect-answer"></div>
+                        <div id="unanswered"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2" id="questions">
                     <form>
+                        <h2>What is Superman's earth name?</h2>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Frodo Baggins
+                            <input type="radio" name="optradio" value="correct">Clark Kent
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Kal-el
+                            <input type="radio" name="optradio" value="incorrect">Frodo Baggins
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Clark Kent
+                            <input type="radio" name="optradio" value="incorrect">Kal-el
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Bob the Builder
+                            <input type="radio" name="optradio" value="incorrect">Bob the Builder
                         </label>
                     </form>
 
-                    <h2>Who does The Joker have the biggest rivalry with?</h2>
                     <form>
+                        <h2>Who does The Joker have the biggest rivalry with?</h2>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Wonderwoman
+                            <input type="radio" name="optradio" value="incorrect">Wonderwoman
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Aquaman
+                            <input type="radio" name="optradio" value="incorrect">Aquaman
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">The Flash
+                            <input type="radio" name="optradio" value="incorrect">The Flash
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Batman
+                            <input type="radio" name="optradio" value="correct">Batman
                         </label>
                     </form>
 
-                    <h2>What is the name of Aquaman's weapon?</h2>
                     <form>
+                        <h2>What is the name of Aquaman's weapon?</h2>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Laser
+                            <input type="radio" name="optradio" value="incorrect">Laser
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Lasso of Truth
+                            <input type="radio" name="optradio" value="correct">Trident of Neptune
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Trident of Neptune
+                            <input type="radio" name="optradio" value="incorrect">Lasso of Truth
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Power Ring
+                            <input type="radio" name="optradio" value="incorrect">Power Ring
                         </label>
                     </form>
 
-                    <h2>Where does Wonderwoman come from?</h2>
                     <form>
+                        <h2>Where does Wonderwoman come from?</h2>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Atlantis
+                            <input type="radio" name="optradio" value="incorrect">Atlantis
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Krypton
+                            <input type="radio" name="optradio" value="incorrect">Krypton
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Paradise Island
+                            <input type="radio" name="optradio" value="correct">Paradise Island
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Earth
+                            <input type="radio" name="optradio" value="incorrect">Earth
                         </label>
                     </form>
 
-                    <h2>Which actor starred in the last role of Batman?</h2>
                     <form>
+                        <h2>Which actor starred in the last role of Batman?</h2>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">George Clooney
+                            <input type="radio" name="optradio" value="incorrect">George Clooney
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Val Kilmer
+                            <input type="radio" name="optradio" value="incorrect">Val Kilmer
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Ben Affleck
+                            <input type="radio" name="optradio" value="incorrect">Christian Bale
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="optradio">Christian Bale
+                            <input type="radio" name="optradio" value="correct">Ben Affleck
                         </label>
                     </form>
                 </div>
