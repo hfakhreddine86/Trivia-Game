@@ -13,9 +13,24 @@ $(document).ready(function () {
 
     $("#start").click(function () {
         $("#questions").show("slow");
-
+        timer = 20;
         timeUp();
     });
+
+    var allRadios = document.getElementsByName('optradio');
+    var booRadio;
+    var x = 0;
+    for (x = 0; x < allRadios.length; x++) {
+
+        allRadios[x].onclick = function () {
+            if (booRadio == this) {
+                this.checked = false;
+                booRadio = null;
+            } else {
+                booRadio = this;
+            }
+        };
+    }
 
     //decrement function
     function decrement() {
@@ -76,11 +91,14 @@ $(document).ready(function () {
         }
     }
     //reset function
-    // function reset() {
-        $("#reset").click(function () {
-            $("#questions").show("slow");
-    
-            timeUp();
-        })
-    // }
+    $("#reset").click(function () {
+
+        $("#questions").show("slow");
+        timer = 20;
+        timeUp();
+        $("#correct-answer").hide();
+        $("#incorrect-answer").hide();
+        $("#unanswered").hide();
+        $('input[name="optradio"]').prop('checked', false);
+    })
 });

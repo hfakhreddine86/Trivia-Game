@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <button id="start">Start Game</button>
-                    <button id="reset">Reset Game</button>
+                    <button onclick="clearChecked()" id="reset">Reset Game</button>
                 </div>
                 <div class="col-md-6">
                     <div id="timer"></div>
@@ -36,11 +36,9 @@
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div id="results">
-                        <div id="correct-answer"></div>
-                        <div id="incorrect-answer"></div>
-                        <div id="unanswered"></div>
-                    </div>
+                    <div id="correct-answer"></div>
+                    <div id="incorrect-answer"></div>
+                    <div id="unanswered"></div>
                 </div>
             </div>
 
@@ -129,6 +127,7 @@
             </div>
         </div>
     </div>
+
     <script src="assets/javascript/app.js"></script>
 </body>
 
