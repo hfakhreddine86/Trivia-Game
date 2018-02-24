@@ -92,7 +92,7 @@ $(document).ready(function () {
     }
     //reset function
     $("#reset").click(function () {
-
+        console.log("Clicked!");
         $("#questions").show("slow");
         timer = 20;
         timeUp();
